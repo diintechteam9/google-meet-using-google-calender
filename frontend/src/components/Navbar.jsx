@@ -22,6 +22,8 @@ export default function Navbar(){
         <nav className="flex items-center gap-2 text-sm">
           <Link to="/create-meet" className="px-3 py-2 rounded hover:bg-gray-100">Create Meet</Link>
           <Link to="/dashboard" className="px-3 py-2 rounded hover:bg-gray-100">Dashboard</Link>
+          <Link to="/privacy" className="px-3 py-2 rounded hover:bg-gray-100">Privacy</Link>
+          <Link to="/terms" className="px-3 py-2 rounded hover:bg-gray-100">Terms</Link>
           {user? (
             <button onClick={onLogout} className="ml-2 px-3 py-2 rounded bg-gray-900 text-white hover:bg-black">Logout</button>
           ) : (

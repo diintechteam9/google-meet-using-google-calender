@@ -16,6 +16,8 @@ function App() {
         <Route path="/create-meet" element={<CreateMeet />} />
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/terms" element={<Terms />} />
+        <Route path="/dashboard/privacy" element={<Privacy />} />
+        <Route path="/dashboard/terms" element={<Terms />} />
       </Routes>
       <Toaster position="top-right" />
     </BrowserRouter>
