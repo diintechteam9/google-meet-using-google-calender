@@ -27,7 +27,7 @@ export default function Navbar(){
           {user? (
             <button onClick={onLogout} className="ml-2 px-3 py-2 rounded bg-gray-900 text-white hover:bg-black">Logout</button>
           ) : (
-            <a href="/" className="ml-2 px-3 py-2 rounded bg-blue-600 text-white hover:bg-blue-700">Sign in</a>
+            <a href="/login" className="ml-2 px-3 py-2 rounded bg-blue-600 text-white hover:bg-blue-700">Sign in</a>
           )}
         </nav>
       </div>
