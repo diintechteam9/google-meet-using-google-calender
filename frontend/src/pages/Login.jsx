@@ -22,7 +22,7 @@ export default function Login(){
           <h1 className="text-3xl font-bold text-gray-900">Sign in to continue</h1>
           <p className="mt-2 text-gray-600">Use your Google account to access your dashboard.</p>
           <div className="mt-8 flex flex-col items-center gap-4">
-            <LoginButton />
+                <LoginButton />
             <Link to="/" className="text-sm text-gray-600 hover:text-gray-900">Back to home</Link>
           </div>
         </section>
