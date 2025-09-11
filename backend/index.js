@@ -9,7 +9,7 @@ const authRoutes=require('./routes/auth.routes');
 const meetRoutes=require('./routes/meet.routes');
 const app=express();
 app.use(express.json())
-app.use(cors({ origin: process.env.CLIENT_ORIGIN || 'http://localhost:5173', credentials: true }));
+app.use(cors({ origin: process.env.CLIENT_ORIGIN, credentials: true }));
 app.use(session({ name:'sess', secret: process.env.SESSION_SECRET || 'change-me', httpOnly: true }));
 
 const PORT=process.env.SERVER_PORT || 4000;
