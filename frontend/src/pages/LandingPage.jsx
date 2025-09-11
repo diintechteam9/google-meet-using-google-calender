@@ -1,19 +1,8 @@
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import { Check, Shield, Calendar, Video } from 'lucide-react';
-import { useEffect } from 'react';
-import { useAuth } from '../hooks/useAuth';
 
 export default function LandingPage(){
-  const { user, loading }=useAuth();
-  const navigate=useNavigate();
-
-  useEffect(()=>{
-    if(!loading && user){
-      navigate('/dashboard', { replace:true });
-    }
-  },[loading, user, navigate]);
-
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-white to-gray-50">
       <Navbar />
